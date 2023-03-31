@@ -1,0 +1,140 @@
+@keyframes palpitar {
+    from { transform: translate(-50%, -50%);
+        filter: drop-shadow(0 0px 0px yellow); }
+    50% { transform: translate(-50%, -50%)
+        scale(1.4);
+        filter: drop-shadow(0 0px 50px yellow); }
+    to { transform: translate(-50%, -50%);
+        filter: drop-shadow(0 0px 0px yellow); }
+}
+body{
+    background-color: #00956a;
+    font-family: 'Permanent Marker', cursive;
+}
+.contenedor{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+#titulo{
+    font-size: 5rem;
+    text-shadow: 0 0 0.2em rgb(255, 158, 119), 0 0 0.2em rgb(255, 158, 119),
+		0 0 0.2em rgb(255, 158, 119);
+}
+table{
+    display: inline-block;
+    background-color: #bacbb4;
+    border-radius: 10px;
+}
+tr{
+    height: 50px;
+}
+td{
+    background-color: antiquewhite;
+    width: 50px;
+    border: 1px dotted black;
+}
+td div{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.resultado{
+    border-radius: 7px;
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.resultado div{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.boton{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px, 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton1, #boton2, #boton3 ,#boton4, #boton5, #boton6{
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 3px black;
+}
+
+#boton1{
+    background-color: red;
+}
+#boton2{
+    background-color: blue;
+}
+#boton3{
+    background-color: yellow;
+}
+#boton4{
+    background-color: green;
+}
+#boton5{
+    background-color: brown;
+}
+#boton6{
+    background-color: gray;
+}
+#boton1:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(255, 30, 0, 0.5),
+                inset 0 2px 0 rgba(0, 0, 0.2);
+}
+#boton2:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(255, 30, 0, 0.5),
+                inset 0 2px 0 rgba(0, 0, 0.2);
+}
+#boton3:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(255, 30, 0, 0.5),
+                inset 0 2px 0 rgba(0, 0, 0.2);
+}
+#boton4:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(255, 30, 0, 0.5),
+                inset 0 2px 0 rgba(0, 0, 0.2);
+}
+#boton5:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(255, 30, 0, 0.5),
+                inset 0 2px 0 rgba(0, 0, 0.2);
+}
+#boton6:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(255, 30, 0, 0.5),
+                inset 0 2px 0 rgba(0, 0, 0.2);
+}
+
+#ganador, #perdedor{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: bold;
+    animation: palpitar 2s infinite linear;
+}
+button{
+    display: none;
+    padding: 15px;
+    margin: 30px;
+    color:bisque;
+    background-color: #723a23;
+    border-radius: 30px;
+    font-size: 2rem;
+}
